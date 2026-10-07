@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+
+# Local environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Generated caches / model artifacts
+.cache/
+
+# Internal backup/config files
+src/config_before_final_baselines.py
+
+# Editable paper source - keep PDF public
+paper/*.docx
+
+# Intermediate experiment results
+results/*.jsonl
+
+# Keep only curated final/public results
+!results/final_benchmark_dense_50q.jsonl
+!results/final_benchmark_hybrid_50q.jsonl
+!results/final_benchmark_reranked_50q.jsonl
+!results/final_benchmark_v4_50q.jsonl
+!results/generalization_probe_v4_final_30q.jsonl
