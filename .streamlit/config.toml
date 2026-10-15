@@ -1,0 +1,8 @@
+[server]
+fileWatcherType = "none"
+
+[theme]
+primaryColor = "#C8102E"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F5F6"
+textColor = "#171717"

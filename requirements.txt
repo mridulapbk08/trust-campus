@@ -7,3 +7,5 @@ rank-bm25
 requests
 pydantic
 tqdm
+streamlit
+altair

@@ -1,3 +1,4 @@
+
 # macOS
 .DS_Store
 
@@ -10,6 +11,9 @@ env/
 __pycache__/
 *.py[cod]
 *.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # IDE/editor
 .vscode/
@@ -19,15 +23,26 @@ __pycache__/
 *.tmp
 *.log
 *.swp
+*.zip
 
 # Local environment / secrets
 .env
 .env.*
+!.env.example
 *.key
 *.pem
+.streamlit/secrets.toml
 
 # Generated caches / model artifacts
 .cache/
+models/
+checkpoints/
+
+# Local vector indexes and generated arrays
+*.faiss
+*.index
+*.npy
+*.npz
 
 # Internal backup/config files
 src/config_before_final_baselines.py
@@ -38,7 +53,7 @@ paper/*.docx
 # Intermediate experiment results
 results/*.jsonl
 
-# Keep only curated final/public results
+# Keep curated final/public results
 !results/final_benchmark_dense_50q.jsonl
 !results/final_benchmark_hybrid_50q.jsonl
 !results/final_benchmark_reranked_50q.jsonl
